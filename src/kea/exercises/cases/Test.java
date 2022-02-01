@@ -20,7 +20,6 @@ public class Test {
         for (String word : wordList) {
             System.out.print(convertWord(word) + " ");
         }
-
     }
 
     private static ArrayList<String> splitInputToArrayList(String sentence) {
@@ -33,8 +32,8 @@ public class Test {
             convertedWord = word; // word is all upper case so no change
         } else {
             convertedWord = word.toLowerCase(); // all other words to lower case
-            if (word.length() >3) {
-                convertedWord = word.substring(0,1).toUpperCase() + word.substring(1); // 1st letter upper case
+            if (word.length() > 3) {
+                convertedWord = word.substring(0, 1).toUpperCase() + word.substring(1); // 1st letter upper case
             }
         }
         return convertedWord;
