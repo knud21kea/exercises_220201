@@ -22,7 +22,7 @@ public class Test {
         drawSquare(side, symbol);
     }
 
-    // Returns a double, catches type mismatch
+    // Returns an int, catches type mismatch
     private static int getValidInt() {
         Scanner input = new Scanner(System.in);
         while (true) {

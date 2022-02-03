@@ -18,12 +18,12 @@ public class Test {
         double maxLengthOfGrass = getValidDouble();
 
         // Outputs days until length >= max length
-        double daysToCut = howManydaysUntilCut(lengthOfGrass, maxLengthOfGrass);
+        double daysToCut = howManyDaysUntilCut(lengthOfGrass, maxLengthOfGrass);
         System.out.println("The grass will need cutting in " + daysToCut + " days.");
     }
 
     // Returns decimal days until grass is at max length
-    public static double howManydaysUntilCut(double lengthNow, double lengthMax) {
+    public static double howManyDaysUntilCut(double lengthNow, double lengthMax) {
         return (lengthMax - lengthNow) / GROWTH;
     }
 
